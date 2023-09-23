@@ -1,0 +1,33 @@
+C is procedure oriented programming language.
+
+#include<stdio.h>
+
+std-> standard
+i  -> input
+o  -> output
+h  -> header file
+
+all the input and output related statements imported from stdio.h
+
+printf-> used to print the data.
+
+return 0 -> the file executed successfully
+
+compile:
+------
+sudo gcc ./filename.c 
+
+Run:
+---
+
+./a.out 
+
+hello.c  -> compile -> a.out
+
+Variable naming rules:
+---------------------
+
+Names include letters, digits, underscore
+It should not start with digits
+C is case sensitive
+Variable name should not be reserved keyword
