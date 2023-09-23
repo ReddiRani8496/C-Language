@@ -4,4 +4,5 @@ int main() {
     printf("%d",a);
     int b;
     printf("%d",b);  //  It will generate a garbage value
+    return 0;
 }
