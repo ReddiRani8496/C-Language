@@ -1,0 +1,15 @@
+DataType                      32bit                                64bit
+
+int                           2bytes                               4bytes
+long                          4bytes                               8bytes
+long long                     8bytes                               8bytes
+
+Casting:
+------
+
+Explicit Casting:
+----------------    Casting done by the user explicityly is called explicit casting.
+
+Implicit Casting:
+----------------
+                    Implicit casting is by done by the computer.
