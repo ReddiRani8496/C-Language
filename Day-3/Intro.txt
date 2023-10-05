@@ -1,0 +1,29 @@
+Format Specifier:
+---------------
+
+Specifies the type of data to be printed.
+
+int      %d
+long     %ld
+long long %lld
+float    %f 
+double   %lf
+char     %c 
+string   %s 
+
+Char to Ascii
+------------
+
+char ch = 'A' -> it will convert to Ascii, 65, then it will be stored in binary form 
+
+scanf:
+-----
+        used to read data from the user
+
+        Syntax:
+        ------
+
+        scanf("formatspecifie",&variable);
+
+        & - specifies the address of that variable
+        
