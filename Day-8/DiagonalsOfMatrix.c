@@ -1,23 +1,18 @@
 #include<stdio.h>
 int main() {
-    int rows,cols;
+    int n;
+    scanf("%d",&n);
 
-    printf("Enter number of rows: ");
-    scanf("%d",&rows);
-
-    printf("Enter number of columns: ");
-    scanf("%d",&cols);
-
-    int arr[rows][cols];
+    int arr[n][n];
 
     int i;
-    for(i=0;i<rows;i++) {
+    for(i=0;i<n;i++) {
         int j;
-        for(j=0;j<cols;j++){
+        for(j=0;j<n;j++){
             scanf("%d",&arr[i][j]);
         }
     }
     
-    for(int i=0;i<rows;i++)
+    for(int i=0;i<n;i++)
         printf("%d ",arr[i][i]);
 }

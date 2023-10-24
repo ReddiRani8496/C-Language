@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main() {
-    printf("Enter number of rows in first matrix: ");
+    printf("Enter number of rows matrix: ");
     int rows,cols;
     scanf("%d",&rows);
 
-    printf("Enter number of columns in first matrix: ");
+    printf("Enter number of columns  matrix: ");
     scanf("%d",&cols);
     int arr[rows][cols];
      printf("Enter values in first matrix: ");
@@ -15,12 +15,6 @@ int main() {
             scanf("%d",&arr[i][j]);
         }
     }
-
-    printf("Enter number of rows in second matrix: ");
-    scanf("%d",&rows);
-
-    printf("Enter number of columns in second matrix: ");
-    scanf("%d",&cols);
 
     int arr1[rows][cols];
      printf("Enter values in second matrix: ");
