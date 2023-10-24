@@ -1,18 +1,40 @@
 #include<stdio.h>
 int main() {
-    int arr[4][4] = {{1,2,3,1},{4,5,6,1},{7,8,9,1},{3,4,7,8}};
+    int rows,cols;
+
+    printf("Enter number of rows: ");
+    scanf("%d",&rows);
+
+    printf("Enter number of columns: ");
+    scanf("%d",&cols);
+
+    int arr[rows][cols];
+
     int i;
-    for(i=0;i<4;i++) {
+    for(i=0;i<rows;i++) {
+        int j;
+        for(j=0;j<cols;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+
+    int res[rows][cols];
+    for(i=0;i<rows;i++) {
         int j;
         for(j=0;j<=i;j++) {
-            printf("%d ",arr[i][j]);
+             res[i][j]=arr[i][j];
         }
-        while (j<4)
+        while (j<cols)
         {
-            printf("0 ");
+             res[i][j++]=0;
             j++;
         }
-        
+    }
+
+     for(i=0;i<rows;i++) {
+        int j;
+        for(j=0;j<cols;j++)
+          printf("%d ",res[i][j]);
         printf("\n");
     }
 }

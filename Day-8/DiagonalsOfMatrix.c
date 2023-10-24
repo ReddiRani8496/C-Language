@@ -1,9 +1,23 @@
 #include<stdio.h>
 int main() {
+    int rows,cols;
 
-    int arr[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
-    
+    printf("Enter number of rows: ");
+    scanf("%d",&rows);
+
+    printf("Enter number of columns: ");
+    scanf("%d",&cols);
+
+    int arr[rows][cols];
+
     int i;
-    for(int i=0;i<3;i++)
+    for(i=0;i<rows;i++) {
+        int j;
+        for(j=0;j<cols;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    
+    for(int i=0;i<rows;i++)
         printf("%d ",arr[i][i]);
 }
