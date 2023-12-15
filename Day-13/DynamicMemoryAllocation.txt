@@ -1,0 +1,30 @@
+Static Memory Allocation : memory is allocated in stack area.
+                           memory is decided at compile-time.
+
+Dynamic Memory Allocation : memory is allocated in heap area.
+                           memory is decided at run-time.
+
+malloc():
+---------
+
+The name "malloc" stands for memory allocation.
+
+The malloc() function reserves a block of memory of the specified number of bytes.
+ And, it returns a pointer of void which can be casted into pointers of any form.
+
+
+If the size of memory is 'n', and trying to store 'n+1' data , it will return null pointer.
+
+malloc() returns void pointer.
+
+syntax:
+------
+
+ptr = (int*)malloc(n*sizeOf(int));
+
+
+C free()
+--------
+
+Dynamically allocated memory created with either calloc() or malloc() doesn't get freed on their own.
+ You must explicitly use free() to release the space.
