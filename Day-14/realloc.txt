@@ -1,0 +1,13 @@
+Realloc is used to reallocate the memory, which is already allocated.
+
+This comes across three scenarios:
+---------------------------------
+
+1. Allocating more memory than previous memory.
+2. Allocating less memory than previous memory.
+3. If we want to increase the size of ptr variable, if next memory location is already allocated, 
+   then new memory allocated for all values.
+
+
+If we allocate less memory than previous memory,value in the extra memory or previously allocated extra memory,
+won't delete, but it is considered as free space.
